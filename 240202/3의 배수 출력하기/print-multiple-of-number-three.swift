@@ -1,6 +1,6 @@
 var input = Int(readLine()!)!
 var i = 1
-while i <= 27 {
+while i <= input {
     if i % 3 == 0 {
         print(i, terminator: " ")
     }
