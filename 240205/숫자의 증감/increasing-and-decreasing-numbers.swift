@@ -6,7 +6,7 @@ if c == "A" {
         print(i, terminator: " ")
     }
 } else {
-    while n > 1 {
+    while n > 0 {
         print(n, terminator: " ")
          n -= 1
 
