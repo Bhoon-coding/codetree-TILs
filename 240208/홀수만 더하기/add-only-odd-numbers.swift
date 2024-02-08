@@ -6,6 +6,6 @@ while let line = readLine(), let number = Int(line.trimmingCharacters(in: .white
     input.append(number)
 }
 
-let filteredArr = input.filter { $0.isMultiple(of: 3) && $0 % 2 == 1 }
-var result: Int = filteredArr.reduce(0) { $0 + $1 }
+let filteredArr = input.filter { $0 % 2 == 1 && $0.isMultiple(of: 3) }
+var result: Int = filteredArr.reduce(0, +)
 print(result)
