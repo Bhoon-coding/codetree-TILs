@@ -4,8 +4,13 @@ import Foundation
 var input: [Int] = []
 while let line = readLine(), let number = Int(line.trimmingCharacters(in: .whitespacesAndNewlines)) {
     input.append(number)
+} 
+
+var sumVal = 0 
+for i in input {
+    if i % 2 == 1 && i.isMultiple(of: 3) {
+        sumVal += i
+    }
 }
 
-let filteredArr = input.filter { $0 % 2 == 1 && $0.isMultiple(of: 3) }
-var result: Int = filteredArr.reduce(0, +)
-print(result)
+print(sumVal)
