@@ -1,6 +1,8 @@
 var input = Int(readLine()!)!
 
-guard input == 1 else { return "*"}
+if input == 1 {
+    print("*")
+} else {
 for i in 1...input {
     var str = ""        
     for _ in 1...i {
@@ -15,4 +17,5 @@ for i in (1...(input - 1)).reversed() {
         str += "* "
     }
     print(str)
+}
 }
