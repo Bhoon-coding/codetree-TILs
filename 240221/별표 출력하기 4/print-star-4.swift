@@ -2,6 +2,10 @@ var input = Int(readLine()!)!
 
 var str: String = ""
 
+if input == 1 { 
+    print("* ")
+}
+
 for i in 1...input {
     var str = ""
     for _ in 1...(input - i + 1) {
