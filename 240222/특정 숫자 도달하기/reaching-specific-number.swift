@@ -13,5 +13,5 @@ for num in numbers {
 }
 
 let result1 = sumList.reduce(0) { $0 + $1 }
-let result2: Double = round(Double(result1) / Double(sumList.count)*100) / 100
+let result2: Double = round(Double(result1) / Double(sumList.count)*10) / 10
 print(result1, result2)
